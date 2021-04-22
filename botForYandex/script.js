@@ -22,8 +22,9 @@
             for (let i = 0; i < links.length; i++) {
                 let link = links[i];
                 if (link.href.indexOf("xn----7sbab5aqcbiddtdj1e1g.xn--p1ai") != -1) {
-                    link.click();
-                    goToTheNextPage = false;
+                     link.target = "_self";
+                     link.click();
+                     goToTheNextPage = false;
                     break;
                 }
             }
